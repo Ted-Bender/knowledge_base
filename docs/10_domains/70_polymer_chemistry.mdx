@@ -10,11 +10,6 @@ import ElnFinderPharm from "@site/src/components/eln/ElnFinderPharm.js";
 <LbeChip title="polymer chemistry" />
 
 ## Introduction
-Introduction
-Data Types
-ELNs and Other Tools
-Publishing Data
-Challenges
 
 Polymer chemistry is focused on the synthesis and characterization of monomer units, macromolecules and resultant
 materials for applications in e.g. optics, electronics and energy, packaging and containers, coatings and adhesives,
@@ -29,23 +24,28 @@ resources and therefore are deemed to be part of the solution for a sustainable 
 - Post-polymerization functionalization.
 - Synthesis of macroscopic materials through 3D printing, moulding etc.
 
-In order to collect comprehensive analytical data to characterize the synthesized materials the following steps can be taken:
+## Data Types
 
-- Data can be collected during the experiment through online methods, drawing samples on a specific schedule, or after the experiment by analyzing the obtained product.
-- Manually determined data: Experimental observations such as colour change or precipitants, appearance, yield and consistency of the product, solubility etc.
-- Digital data are obtained with analytical devices. An overview on file extensions, file sizes and converters for several analytical methods is given in the table below.
-- When necessary, pre-processing of digital data with software of analytical device before data are transferred to the Chemotion-ELN.
-- Raw data files in proprietary file formats should be saved alongside interoperable open file formats by using converters or the software of the analytical device. If no specific open format is currently available, exporting as .txt or .csv is recommended. Please be aware that metadata included in the header of .txt or .csv files may not follow a defined (open) format and metadata should be additionally also added into the ELN.
+Manually determined data: Experimental observations such as colour change or precipitants, appearance, yield and consistency of the product, solubility etc.
+Digital data are obtained with analytical devices. An overview on file extensions, file sizes and converters for several analytical methods is given in the table below.
+When necessary, pre-processing of digital data with software of analytical device before data are transferred.
+Raw data files in proprietary file formats should be saved alongside interoperable open file formats by using converters or the software of the analytical device. If no specific open format is currently available, exporting as .txt or .csv is recommended. Please be aware that metadata included in the header of .txt or .csv files may not follow a defined (open) format and metadata should be additionally also added into the ELN.
 :::
 
 
-## Documentation and publication of research data
+## ELNs and Other Tools
 
-The Chemotion-ELN was initially developed for organic chemistry and is now adapted for other disciplines in chemistry as well. The adaption for polymer chemistry and the integration of analytical methods are now ongoing, therefore the individual methods in the table below are marked respectively. Generally, the documentation of research data is conducted as follows:
+For effective data management, software tools should be selected in a uniform manner within a project or research group with the aim to organize and streamline workflows. This involves establishing clear usage guidelines, including metadata templates drawn from minimum information standards for a given method, where available. These should be outlined in a data management plan (DMP) for each project. NFDI4Chem provides an RDMO template specifically tailored to the needs of chemists.
 
-- Documentation of research data  is carried out digitally using an ELN.
-- Experimental conditions (e.g. solvents, temperature, duration, pressure) are noted in the ELN.
-- Observations and results of analytical methods with no digital output (i.e. no data files) are added manually to the ELN entry of the experiment, including colour change or precipitants, appearance, yield and consistency of the product, solubility etc.
-- Obtained data from analytical instruments (e.g. NMR, SEC, MS or IR data) are uploaded to the Chemotion-ELN in open file formats and directly attached to the respective ELN experiment entry including instrumental setup metadata.
+An electronic lab notebooks (ELN) helps in the day-to-day planning and structured documentation of experiments, while some also assist in data workflow management. For disciplines with diverse research, ELNs must be flexible and customizable. Certain universities may have a central option, while each research group may chose what best fits their needs and resources if they are able to host or procure their own solution. The ELN-Finder lists many options and the article on choosing an ELN provides further assistance:
 
-In an effort to realize research data management in line with the FAIR principles, the data can be published in a repository including raw and processed data for reuse, directly from the Chemotion-ELN. The use of the Chemotion-ELN enables a direct transfer of research data and the respective metadata into the Chemotion Repository. Subsequently, these data are automatically shared with other repositories, e.g. PubChem. For the publication of research data in other discipline-specific repositories, data have to be exported from the Chemotion-ELN and uploaded into the respective database.
+<ElnFinderPharm />
+
+## Publishing Data
+
+For synthesis data and analytical data, specific repositories such as [Chemotion Repository](https://www.chemotion-repository.net/welcome) (synthesis data), [MassBankEU](https://massbank.eu/MassBank/) (mass spectra), or [nmrXiv](https://nmrxiv.org/) (for NMR data) are recommended. For other types of data the generic repository [RADAR4Chem](https://radar.products.fiz-karlsruhe.de/de/radarabout/radar4chem) is recommended.
+Publishing research data is important to allow other researchers to reuse it. To reach as many researchers as possible, choosing the right repository can be crucial (check the [Choose a Repository](https://knowledgebase.nfdi4chem.de/knowledge_base/docs/choose_repository/) article for more information).
+
+## Challenges
+[has to be added]
+
